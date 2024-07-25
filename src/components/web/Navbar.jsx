@@ -5,25 +5,25 @@ import { ModeToggle } from '../ModeToggle'
 const Navbar = () => {
     const Linksdata=[
         {
-            title:'Home',
+            title:'HOME',
             link:'/'
         },
         {
-            title:'Login',
+            title:'LOGIN',
             link:'/login'
         },
         {
-            title:'Register',
+            title:'REGISTER',
             link:'/register'
         }
         
     ]
   return (
-    <div className='w-full h-[8vh] flex flex-row justify-center items-center bg-blue-500 border-b-4 border-primary font-mono '>
-    <div className='h-full w-1/4 flex flex-row justify-center items-center font-thin text-2xl '>
+    <div className='w-full h-[8vh] flex flex-row justify-center items-center bg-blue-500 border-b-4 border-primary letter-spacing '>
+    <div className='h-full w-1/4 flex flex-row justify-center items-center text-2xl '>
         SKYSCRAPER
       </div>
-    <div className='h-full w-3/4 flex flex-row justify-center items-center gap-20 font-bold'>
+    <div className='h-full w-3/4 flex flex-row justify-center items-center gap-20 '>
       {
         Linksdata.map((data,index)=>(
             <li key={index} className='list-none'>

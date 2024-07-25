@@ -1,16 +1,48 @@
-.image-container {
-    position:relative;
-    /* margin-top: 5%; */
-}
-
-.text-overlay {
-    /* position: absolute; */
+.home-container {
+    text-align: center;
+  }
+  
+  .image-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%; /* Ensure the image does not exceed the container width */
+  }
+  
+  .background-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .centered-text {
+    position: absolute;
     top: 50%;
     left: 50%;
-    /* transform: translate(-50%, -50%); */
-    text-align: center;
-    font-family: 'Chiller';
-    font-size: 100%;
     
-     color: #fff;/* Set text color to white or any color that contrasts with the image */
-}
+    letter-spacing: 0.2em;
+    transform: translate(-50%, -50%);
+    color: white; /* Change this to your preferred text color */
+    font-size: 2rem; /* Adjust the font size as needed */
+    font-weight: 100; /* Adjust the font weight as needed */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: add shadow for better visibility */
+    white-space: nowrap; /* Prevent text from wrapping */
+  }
+  
+/*   
+  font-style: normal;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  text-align: center;
+  color: #fff;
+  box-sizing: border-box;
+  min-height: 0;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 1.8em;
+  font-family: gotham,"Helvetica Neue",sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  line-height: 1.4;
+  animation: fade-in 1.5s 1.5s ease both; */
