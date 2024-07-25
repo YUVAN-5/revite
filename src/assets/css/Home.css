@@ -61,7 +61,7 @@
 
 
 .link-images {
-    /* display: flex; */
+    display: flex;
     /* justify-content: space-between; */
      /* margin: 20px 0;Add margin to the top and bottom of the section */
   }

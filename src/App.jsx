@@ -6,6 +6,7 @@ import Home from './pages/web/Home'
 import Login from './pages/web/Login'
 import Register from './pages/web/Signup'
 import Notfound from './pages/web/Notfound'
+import Dashboard from './pages/admin/Dashboard'
 import './assets/css/Login.css'
 import './assets/css/Signup.css'
 
@@ -18,6 +19,8 @@ const App = () => {
       <Route path='/' element={<Home/>}/>
       <Route path='/login' element={<Login/>}/>
       <Route path='/register' element={<Register/>}/>
+      <Route path='/dashboard' element={<Dashboard/>}/>
+
       <Route path='*' element={<Notfound/>}/>
       </Route>
     </Routes>
