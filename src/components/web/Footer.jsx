@@ -3,7 +3,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className='w-full h-[8vh] flex flex-row justify-center items-center bg-blue-500 border-b-4 border-primary '>
+    <div className='w-full h-[8vh] flex flex-row justify-center items-center  border-b-2 border-primary '>
     <div className='h-full w-3/4 flex flex-row  items-center '>
        ©️ skyscraper.io 2024
       </div>

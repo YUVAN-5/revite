@@ -19,7 +19,7 @@ const Navbar = () => {
         
     ]
   return (
-    <div className='w-full h-[8vh] flex flex-row justify-center items-center bg-blue-500 border-b-4 border-primary letter-spacing '>
+    <div className='w-full h-[8vh] flex flex-row justify-center items-center font-semibold border-b-2 border-primary letter-spacing '>
     <div className='h-full w-1/4 flex flex-row justify-center items-center text-2xl '>
         SKYSCRAPER
       </div>
