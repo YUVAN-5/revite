@@ -10,6 +10,9 @@ import Dashboard from './pages/admin/Dashboard'
 import UserDashboard from './pages/user/UserDashboard'
 import './assets/css/Login.css'
 import './assets/css/Signup.css'
+import About from './components/user/About'
+import Agent from './pages/admin/Agent'
+// import Layout from './layout/Layout'
 
 const App = () => {
   return (
@@ -20,11 +23,15 @@ const App = () => {
       <Route path='/' element={<Home/>}/>
       <Route path='/login' element={<Login/>}/>
       <Route path='/register' element={<Register/>}/>
+      <Route path='/aboutus' element={<About/>}/>
 
       <Route path='*' element={<Notfound/>}/>
       </Route>
+      {/* <Route element={<Layout/>}> */}
       <Route path='/dashboard' element={<Dashboard/>}/>
       <Route path='/userdashboard' element={<UserDashboard/>}/>
+      <Route path='/agents' element={<Agent/>}/>
+      {/* </Route> */}
 
     </Routes>
 

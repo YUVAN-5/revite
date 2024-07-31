@@ -52,24 +52,25 @@ const UserDashboard = () => {
   return (
     <div className={`flex h-screen ${theme === 'dark' ? 'bg-gray-900' : 'bg-gray-100'}`}>
       {/* Fixed Sidebar */}
-      <div className="fixed top-0 left-0 bg-orange-500 text-white w-64 h-full py-7 px-2 dark:bg-gray-800">
+      <div className="fixed top-0 left-0 bg-black text-white w-64 h-full py-7 px-2 dark:bg-gray-800">
         <div className="text-white flex items-center space-x-2 px-4">
-          <span className="text-2xl font-extrabold">REAL ESTATE</span>
+          <span className="text-2xl font-extrabold">SKYSCRAPER</span>
         </div>
         <nav className="mt-6">
-          <Link to="#" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-orange-500 hover:text-white dark:hover:bg-orange-500">Dashboard</Link>
+          <Link to="#" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-orange-500 hover:text-white dark:hover:bg-orange-500">Overview</Link>
           <Link to="#" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-orange-500 hover:text-white dark:hover:bg-orange-500">Properties</Link>
-          <Link to="#" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-orange-500 hover:text-white dark:hover:bg-orange-500">Reports</Link>
-          <Link to="#" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-orange-500 hover:text-white dark:hover:bg-orange-500">Settings</Link>
-        </nav>
+          {/* <Link to="#" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-orange-500 hover:text-white dark:hover:bg-orange-500">Reports</Link> */}
+          {/* <Link to="#" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-orange-500 hover:text-white dark:hover:bg-orange-500">Settings</Link> */}
+          <Link to="/" className="block py-2.5 px-4 mt-96 rounded transition duration-200 hover:bg-blue-700 hover:text-white dark:hover:bg-blue-800">LOGOUT</Link>
+          </nav>
       </div>
 
       {/* Fixed Topbar */}
       <div className="fixed top-0 left-64 right-0 bg-white dark:bg-gray-900 p-4 shadow-md z-10">
         <div className="flex justify-between items-center">
-          <h1 className="text-3xl font-bold">Dashboard</h1>
+          <h1 className="text-3xl font-bold"></h1>
           <div className="flex items-center">
-            <span className="mr-3 text-gray-700 dark:text-gray-300">Hello, Alex</span>
+            <span className="mr-3 text-gray-700 dark:text-gray-300">Hello, Yuvan</span>
             <img className="w-10 h-10 rounded-full" src={Avatar} alt="Avatar" />
             <ModeToggle />
           </div>
@@ -81,15 +82,15 @@ const UserDashboard = () => {
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 mb-6">
           <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
             <h3 className="text-xl font-semibold">Total Properties</h3>
-            <p className="text-2xl">150</p>
+            <p className="text-2xl">5</p>
           </div>
           <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
             <h3 className="text-xl font-semibold">Active Listings</h3>
-            <p className="text-2xl">78</p>
+            <p className="text-2xl">3</p>
           </div>
           <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
             <h3 className="text-xl font-semibold">Recent Sales</h3>
-            <p className="text-2xl">12</p>
+            <p className="text-2xl">4</p>
           </div>
           <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
             <h3 className="text-xl font-semibold">Total Revenue</h3>

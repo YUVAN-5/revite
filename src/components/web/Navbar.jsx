@@ -10,6 +10,10 @@ const Navbar = () => {
             link:'/'
         },
         {
+            title:'ABOUT',
+            link:'/aboutus'
+        },
+        {
             title:'LOGIN',
             link:'/login'
         },
@@ -25,7 +29,7 @@ const Navbar = () => {
     {/* <img src={Skyline} className='w-48 h-20'/>  */}
         SKYSCRAPER
       </div>
-    <div className='h-full w-2/4 flex flex-row justify-center items-center gap-20 '>
+    <div className='h-full w-3/4 flex flex-row justify-center items-center gap-20 '>
       {
         Linksdata.map((data,index)=>(
             <li key={index} className='list-none'>
