@@ -18,6 +18,10 @@ const Navbar = () => {
             link:'/login'
         },
         {
+            title:'PROPERTIES',
+            link:'/property'
+        },
+        {
             title:'REGISTER',
             link:'/register'
         }

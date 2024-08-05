@@ -29,6 +29,7 @@ const Home = () => {
           <a href="#">
             <img src={San} alt="Description of link image 1" className="link-image" />
             <div className="link-image-text">ROSEWOOD RESIDENCIES SAN FRANCISCO</div>
+            
           </a>
         </div>
         <div className="link-image-container">
@@ -52,6 +53,11 @@ const Home = () => {
           </a>
         </div>
       </div>
+        <div className="center-text" >
+          <a href="#">
+      <h4>SEE MORE PROJECTS</h4></a>
+    </div>
+          <hr className='divider'/>
     
     </>
   )
