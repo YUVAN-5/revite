@@ -63,10 +63,10 @@
 // };
 
 // export default Login;
-
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTheme } from '../../components/ThemeProvider'; 
+import axios from 'axios';
 
 const Login = () => {
   const { theme, toggleTheme } = useTheme();
@@ -74,18 +74,40 @@ const Login = () => {
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Dummy authentication logic
-    if (email === 'admin@gmail.com') {
-      navigate('/dashboard');
-    } else if (email === 'user@gmail.com') {
-      navigate('/userdashboard');
-    } else {
-      alert('Invalid email');
+    try {
+      const response = await axios.post('http://localhost:8080/api/auth/login', { email, password });
+
+      if (response.status === 200) {
+        const { token, role } = response.data;
+
+        if (token && role) {
+          localStorage.setItem('token', token);
+          localStorage.setItem('role', role);
+
+          console.log('Token and role stored in localStorage'); // Confirmation log
+
+          if (role === 'ADMIN') {
+            navigate('/dashboard');
+          } else if (role === 'USER') {
+            navigate('/userdashboard');
+          } else {
+            alert('Invalid role');
+          }
+        } else {
+          console.error('Token or role missing in response'); // Error if token/role is missing
+          alert('Login failed: Invalid server response');
+        }
+      } else {
+        alert('Login failed');
+      }
+    } catch (error) {
+      console.error('Error during login:', error);
+      alert('Invalid email or password');
     }
-  };
+  }
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100 dark:bg-black">

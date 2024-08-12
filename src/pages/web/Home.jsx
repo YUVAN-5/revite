@@ -17,6 +17,7 @@ const Home = () => {
       </div>
     </div>
     <div className="center-text" >
+      {/* <div className=''></div> */}
       <h1>THE EVOLVING WORLD OF LUXURY LIVING</h1>
     </div>
       <hr className='divider'/>

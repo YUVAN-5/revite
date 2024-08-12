@@ -42,6 +42,7 @@
     font-weight: 100; /* Adjust the font weight as needed */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: add shadow for better visibility */
     white-space: nowrap; /* Prevent text from wrapping */
+    
   }
 
   .divider {
